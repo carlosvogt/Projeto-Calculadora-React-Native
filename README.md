@@ -8,5 +8,8 @@ Desenvolvido durante a realização do curso de React-native Desenvolva Apps Nat
 <li> Abaixo imagem do projeto final.
 <br>
 <br>
+<div>
+ <img alt="Screenshot" title="#Screenshot" src="https://github.com/carlosvogt/Projeto-Calculadora-React-Native/screenshot.PNG "
+width="300"/>
+</div>
 
-![Screenshot](screenshot.png)
