@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   displayValue: {
-    fontSize: 60,
+    fontSize: 40,
     color: '#fff',
   },
 });
@@ -18,9 +18,7 @@ const styles = StyleSheet.create({
 function Display({ value }) {
   return (
     <View style={styles.display}>
-      <Text style={styles.displayValue} numberOfLines={1}>
-        {value}
-      </Text>
+      <Text style={styles.displayValue}>{value}</Text>
     </View>
   );
 }

@@ -10,11 +10,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#f0f0f0',
     textAlign: 'center',
     borderWidth: 1,
-    borderColor: '#888',
+    borderColor: '#555',
   },
   operationButton: {
     color: '#fff',
-    backgroundColor: '#fa8231',
+    backgroundColor: '#f71',
   },
   buttonDouble: {
     width: (Dimensions.get('window').width / 4) * 2,

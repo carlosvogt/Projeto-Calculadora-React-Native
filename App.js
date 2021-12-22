@@ -13,56 +13,64 @@ const styles = StyleSheet.create({
   },
 });
 const App = function App() {
-  const [currentNumber, setCurrentNumber] = useState(0);
-  const [lastNumber, setLastNumber] = useState('');
+  const [current, setCurrent] = useState('');
+  const [display, setDisplay] = useState(0);
 
   function calculator() {
-    const splitNumbers = currentNumber.split(' ');
+    const splitNumbers = current.split(' ');
     const operator = splitNumbers[1];
-    console.log('operator', operator);
-    console.log('currentNumber', currentNumber);
     if (operator === '*') {
-      setCurrentNumber(
+      setCurrent(
+        (parseFloat(splitNumbers[0]) * parseFloat(splitNumbers[2])).toString(),
+      );
+      setDisplay(
         (parseFloat(splitNumbers[0]) * parseFloat(splitNumbers[2])).toString(),
       );
     }
     if (operator === '/') {
-      setCurrentNumber(
+      setCurrent(
+        (parseFloat(splitNumbers[0]) / parseFloat(splitNumbers[2])).toString(),
+      );
+      setDisplay(
         (parseFloat(splitNumbers[0]) / parseFloat(splitNumbers[2])).toString(),
       );
     }
     if (operator === '+') {
-      setCurrentNumber(
+      setCurrent(
+        (parseFloat(splitNumbers[0]) + parseFloat(splitNumbers[2])).toString(),
+      );
+      setDisplay(
         (parseFloat(splitNumbers[0]) + parseFloat(splitNumbers[2])).toString(),
       );
     }
     if (operator === '-') {
-      setCurrentNumber(
+      setCurrent(
+        (parseFloat(splitNumbers[0]) - parseFloat(splitNumbers[2])).toString(),
+      );
+      setDisplay(
         (parseFloat(splitNumbers[0]) - parseFloat(splitNumbers[2])).toString(),
       );
     }
   }
 
   function handleClick(item) {
-    console.log('item', item);
     if (item === '+' || item === '*' || item === '/' || item === '-') {
-      setCurrentNumber(`${currentNumber} ${item} `);
+      setCurrent(`${current} ${item} `);
+      setDisplay(`${current} ${item} `);
     } else if (item === 'AC') {
-      setLastNumber('');
-      setCurrentNumber(0);
-    } else if (item === '.') {
-      setCurrentNumber(currentNumber + item);
+      setCurrent('');
+      setDisplay(0);
     } else if (item === '=') {
-      setLastNumber(`${currentNumber} =`);
       calculator();
     } else {
-      setCurrentNumber(currentNumber + item);
+      setCurrent(current + item);
+      setDisplay(current + item);
     }
   }
 
   return (
     <View style={styles.container}>
-      <Display value={currentNumber} />
+      <Display value={display} />
       <View style={styles.buttons}>
         <Button label="AC" size="triple" onPress={() => handleClick('AC')} />
         <Button label="/" operation onPress={() => handleClick('/')} />
