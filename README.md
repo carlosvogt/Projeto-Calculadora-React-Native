@@ -9,7 +9,7 @@ Desenvolvido durante a realização do curso de React-native Desenvolva Apps Nat
 <br>
 <br>
 <div>
- <img alt="NextLevelWeek" title="#NextLevelWeek" src="./screenshot.png "
+ <img alt="Screenshot" title="#Screenshot" src="./screenshot.png "
 width="300"/>
 </div>
 
