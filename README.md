@@ -9,7 +9,7 @@ Desenvolvido durante a realização do curso de React-native Desenvolva Apps Nat
 <br>
 <br>
 <div>
- <img alt="Screenshot" title="#Screenshot" src="https://github.com/carlosvogt/Projeto-Calculadora-React-Native/screenshot.PNG "
+ <img alt="Screenshot" title="#Screenshot" src="https://github.com/carlosvogt/Projeto-Calculadora-React-Native/blob/main/screenshot.PNG "
 width="300"/>
 </div>
 
