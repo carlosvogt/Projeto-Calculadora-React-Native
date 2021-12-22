@@ -8,8 +8,5 @@ Desenvolvido durante a realização do curso de React-native Desenvolva Apps Nat
 <li> Abaixo imagem do projeto final.
 <br>
 <br>
-<div>
- <img alt="Screenshot" title="#Screenshot" src="./screenshot.png "
-width="300"/>
-</div>
 
+![Screenshot](screenshot.png)
